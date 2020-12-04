@@ -1,0 +1,47 @@
+.container {
+  background-color: pink;
+  margin-top: 10%;
+  width: 30%;
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 1em;
+  margin-left: 35%;
+}
+
+.container .container__card {
+  font-size: 100%;
+}
+
+.container .card__para {
+  color: black;
+  font-size: 100%;
+}
+
+.container .card__ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card__item {
+  padding: .2em;
+  font-size: 100%;
+  color: red;
+}
+
+.container .card__item--active:hover {
+  background-color: white;
+  color: black;
+}
+
+.container .card__button {
+  background-color: orange;
+  margin-left: 40%;
+}
+
+.container .card__button:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */

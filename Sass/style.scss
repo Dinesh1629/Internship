@@ -1,0 +1,43 @@
+.hb-header{
+    position: relative;
+    background-color: green;
+
+    .header-wrapper{ 
+        color: red;
+        margin: 0 auto;
+    }
+
+    
+// variable decleration//
+
+    $large-font: 100px;
+    $color:pink;
+
+p {
+    font-size: $large-font;
+}
+
+
+
+#Demo {
+    color: rgb($red: 42, $green: 179, $blue: 154);
+ }
+ 
+ #sass {
+    $red: 42;
+    color: rgb($red: $red, $green: 179, $blue: 154);
+ }
+}
+.row{
+    border-color: green($color:green);
+#first{
+    font-size: $large-font;
+    color:$color;
+}
+#second{
+    color:violet;
+}
+#third{
+    color:green;
+}
+}

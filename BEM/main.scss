@@ -1,0 +1,51 @@
+$color:red;
+$font-size:100%;
+
+.container{
+    background-color:pink;
+    margin-top:10%;
+    width:30%;
+    height:50%;
+    display:grid ;
+    border-radius: 1em;
+    margin-left: 35%;
+
+
+   .container__card{
+    font-size:$font-size;
+    }
+
+    .card__img{
+      
+    }
+    .card__para{
+        color:black;
+        font-size:$font-size;
+    }
+   .card__ul{
+       list-style-type:none ;
+       display: flex;
+   }
+   .card__item{
+       padding:.2em;
+       font-size:$font-size;
+       color:$color;
+   }
+
+   .card__item--active:hover{
+       background-color:white;
+       color:black;
+
+          }
+
+   .card__button{
+       background-color: orange;
+       margin-left: 40%;
+   }
+
+       .card__button:hover{
+           background-color: green;
+       }
+   
+
+}
