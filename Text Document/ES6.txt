@@ -1,0 +1,144 @@
+Sixth Edition released in 2015, see ES6 chapters for new features
+Single-line comments (//) − Any text between a // and the end of a line is treated as a comment.
+
+Multi-line comments (/* */) − These comments may span multiple lines
+
+Identifiers cannot be keywords.
+
+Identifiers can contain alphabets and numbers.
+
+Identifiers cannot contain spaces and special characters,
+
+
+A variable, by definition, is “a named space in the memory” that stores values.
+Variable names are called identifiers.
+Global Scope − A variable can be accessed from within any part of the JavaScript code.
+Local Scope − a vrialbe can be accessed only in the block
+Example:
+var num = 10 
+function test() { 
+   var num = 100 
+   console.log("value of num in test() "+num) 
+} 
+console.log("value of num outside test() "+num) 
+test()
+o/p
+value of num outside test() 10
+value of num in test() 100
+
+
+Let 
+function test() { 
+   var num = 100 
+   console.log("value of num in test() "+num) 
+   { 
+      console.log("Inner Block begins") 
+      let num = 200 
+      console.log("value of num : "+num)  
+   } 
+} 
+test()
+
+o/p
+value of num in test() 100
+inner block begins
+value of num is 200
+
+
+
+Contant are Immutable
+<script>
+   let income = 100000
+   const INTEREST_RATE = 0.08
+   income += 50000 // mutable
+   console.log("changed income value is ",income)
+   INTEREST_RATE += 0.01
+   console.log("changed rate is ",INTEREST_RATE) //Error: not mutable
+</script>
+o/p
+changed incom evalue is 150000
+uncaught exception
+
+
+Spread Operator
+ES6 provides a new operator called the spread operator. The spread operator is represented by three dots “...” . The spread operator converts an array into individual array elements.
+
+<script>
+   function addThreeNumbers(a,b,c){
+      return a+b+c;
+   }
+   const arr = [10,20,30]
+   console.log('sum is :',addThreeNumbers(...arr))
+   console.log('sum is ',addThreeNumbers(...[1,2,3]))
+</script>
+
+sum is : 60
+sum is 6
+
+
+spread operator array copy
+<script>
+   //copy array using spread operator
+   let source_arr = [10,20,30]
+   let dest_arr = [...source_arr]
+   console.log(dest_arr)
+	
+   //concatenate two arrays
+   let arr1 = [10,20,30]
+   let arr2 =[40,50,60]
+   let arr3 = [...arr1,...arr2]
+   console.log(arr3)
+</script>
+
+ output 
+
+[10, 20, 30]
+[10, 20, 30, 40, 50, 60]
+
+
+
+
+button function
+
+<script type = "text/javascript"> 
+    function over() {  
+       document.write ("Mouse Over");  
+    }  
+    function out() {  
+       document.write ("Mouse Out");  
+    }  
+ </script> 
+
+
+<p>Bring your mouse inside the division to see the result:</p> 
+      <div onmouseover = "over()" onmouseout = "out()"> 
+         <h2> This is inside the division </h2> 
+      </div>
+
+      o/p
+      mouse over
+      mouse out
+
+
+
+      redirect
+      <!DOCTYPE html> 
+<html> 
+   <head> 
+      <script> 
+         function newLocation() { 
+            window.location = "http://www.xyz.com"; 
+         } 
+      </script> 
+   </head> 
+
+   <body> 
+      <input type = "button" value = "Go to new location" onclick = "newLocation()"> 
+   </body> 
+</html>
+
+
+
+
+
+ES7
